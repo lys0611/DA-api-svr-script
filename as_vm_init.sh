@@ -38,15 +38,15 @@ SECOND_SCRIPT_URL="https://github.com/lys0611/DA-api-svr-script/raw/refs/heads/m
 
 # 유효성 체크
 curl --output /dev/null --silent --head --fail "$SECOND_SCRIPT_URL" || {
-  echo "kakaocloud: as_vm_setup.sh 다운로드 링크가 유효하지 않습니다."
+  echo "kakaocloud: as_env_setup.sh 다운로드 링크가 유효하지 않습니다."
   exit 1
 }
 
 echo "kakaocloud: 스크립트 다운로드 링크가 유효합니다. 스크립트를 다운로드합니다."
-wget -O as_vm_setup.sh "$SECOND_SCRIPT_URL"
-chmod +x as_vm_setup.sh
+wget -O as_env_setup.sh "$SECOND_SCRIPT_URL"
+chmod +x as_env_setup.sh
 
-echo "kakaocloud: as_vm_setup.sh 실행을 시작합니다."
-sudo -E ./as_vm_setup.sh
+echo "kakaocloud: as_env_setup.sh 실행을 시작합니다."
+sudo -E ./as_env_setup.sh
 
 echo "kakaocloud: 모든 작업 완료"
