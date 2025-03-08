@@ -34,7 +34,7 @@ source /home/ubuntu/.bashrc
 echo "kakaocloud: ~/.bashrc에 환경 변수를 추가 완료."
 
 echo "kakaocloud: 2. as_vm_setup.sh 스크립트를 다운로드합니다."
-SECOND_SCRIPT_URL="https://raw.githubusercontent.com/ExampleUser/ExampleRepo/main/as_vm_setup.sh"
+SECOND_SCRIPT_URL="https://github.com/lys0611/DA-api-svr-script/raw/refs/heads/main/as_vm_init.sh"
 
 # 유효성 체크
 curl --output /dev/null --silent --head --fail "$SECOND_SCRIPT_URL" || {
